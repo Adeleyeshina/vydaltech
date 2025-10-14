@@ -2,7 +2,7 @@
 
 </script>
 <template>
-    <section class="pb-900">
+    <section class="">
         hero
     </section>
 </template>

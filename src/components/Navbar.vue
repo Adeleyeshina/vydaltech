@@ -12,7 +12,7 @@ const isOpenMenu = ref(false)
     <nav class="bg-white shadow-sm px-[20px] md:px-14 py-4 sticky top-0 min-w-full">
         <div class="flex justify-between items-center">
             <!-- Logo -->
-            <RouterLink to="/" class="flex items-center gap-x-4">
+            <RouterLink to="/" class="flex items-center gap-x-3 md:gap-x-4">
                 <div class="bg-primary px-2 py-3 md:py-4 rounded-lg">
                     <font-awesome-icon icon="fa-shield-halved" class="text-white text-[1.6rem]" />
                 </div>
