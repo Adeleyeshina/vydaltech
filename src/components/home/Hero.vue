@@ -25,14 +25,16 @@ const heroWorks = [
         <div class="grid grid-cols-1 2xl:grid-cols-2 z-2 items-center gap-x-20 gap-y-7">
             <!-- Left -->
             <div class="space-y-5">
-                <p class="text-center grid rounded-full bg-primary sm:w-fit text-white py-2 px-5 font-semibold">Professional
+                <p class="text-center grid rounded-full bg-primary sm:w-fit text-white py-2 px-5 font-semibold">
+                    Professional
                     Security
                     Solutions</p>
                 <h1 class="text-center text-4xl sm:text-left sm:text-5xl 2xl:text-7xl font-bold text-white">
                     Secure, Monitor, and <span class="text-[#60a5fa]">Protect</span> with Vyldal Tech
                 </h1>
 
-                <p class="text-xl text-center sm:text-left sm:text-2xl font-normal text-gray-100">Professional approach to tech simplicity. Safeguarding
+                <p class="text-xl text-center sm:text-left sm:text-2xl font-normal text-gray-100">Professional approach
+                    to tech simplicity. Safeguarding
                     your
                     home, office, and business with
                     cutting-edge security solutions.
@@ -57,7 +59,7 @@ const heroWorks = [
 
                 <!--  -->
 
-                <div class="2xl:ml-10 mt-7 grid grid-cols-4 justify-around">
+                <div class=" mt-7 grid grid-cols-2 sm:grid-cols-4 text-center gap-y-3 justify-around">
                     <div v-for="items in heroWorks" :key="items.heading">
                         <h1 class="text-[#60A5FA] text-3xl font-bold">{{ items.heading }}</h1>
                         <small class="text-sm text-[#D1D5DB] font-normal">{{ items.small }}</small>
@@ -71,3 +73,12 @@ const heroWorks = [
         </div>
     </header>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+    name: "Hero"
+})
+
+</script>

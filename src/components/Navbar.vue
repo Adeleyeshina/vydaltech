@@ -28,7 +28,7 @@ watch(() => routes.path, () => {
 
             <!-- desktop navlinks -->
             <div class="hidden lg:flex justify-center flex-1">
-                <ul class="flex gap-x-10">
+                <ul class="flex space-x-7 2xl:space-x-10">
                     <li v-for="({ name, path }, index) in navLinks" :key="index">
                         <RouterLink :to="path" v-slot="{ isActive }" v-if="index !== navLinks.length - 1"
                             class="text-secondary font-[500] text-lg hover:text-primary">
@@ -41,7 +41,7 @@ watch(() => routes.path, () => {
             </div>
 
             <!-- right side -->
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-x-5">
                 <div class="text-primary">
                     <p class="font-bold hidden 2xl:block">
                         <span><font-awesome-icon icon="fa-phone" /></span>
@@ -50,7 +50,7 @@ watch(() => routes.path, () => {
                 </div>
 
                 <button @click="router.push('/booking')"
-                    class="bg-primary text-white py-3 cursor-pointer px-7 font-semibold rounded-md hidden lg:block hover:bg-blue-700">
+                    class="bg-primary text-white py-3 cursor-pointer px-5 2xl:px-7 font-semibold rounded-md hidden lg:block hover:bg-blue-700">
                     Book Service
                 </button>
             </div>
