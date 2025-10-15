@@ -41,7 +41,7 @@ const handleSubmit = () => {
     </aside>
 </template>
 
-<script>
+<script lang="ts">
 export default {
     name: 'Quotes'
 }
