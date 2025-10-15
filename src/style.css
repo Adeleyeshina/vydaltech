@@ -10,5 +10,5 @@ html, body {
 }
 
 section {
-    @apply px-[20px] md:px-14
+    @apply px-[30px] sm:px-14
 }

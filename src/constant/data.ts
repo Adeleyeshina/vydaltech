@@ -25,3 +25,5 @@ export const navLinks = [
     },
  
 ]
+
+export const vydalServices = ['CCTV Installation', 'Solar Inverters', 'Intercoms', 'Networking']

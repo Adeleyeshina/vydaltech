@@ -1,15 +1,19 @@
 <script setup lang="ts">
-import { RouterLink, useRouter } from 'vue-router';
+import { RouterLink, useRoute, useRouter } from 'vue-router';
 import { navLinks } from '../constant/data';
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const router = useRouter()
-
+const routes = useRoute()
 const isOpenMenu = ref(false)
+
+watch(() => routes.path, () => {
+    isOpenMenu.value ? isOpenMenu.value = false : ''
+})
 </script>
 
 <template>
-    <nav class="bg-white shadow-sm px-[20px] md:px-14 py-4 sticky top-0 min-w-full">
+    <nav class="bg-white shadow-sm px-[30px] sm:px-14 py-4 sticky top-0 min-w-full z-5">
         <div class="flex justify-between items-center">
             <!-- Logo -->
             <RouterLink to="/" class="flex items-center gap-x-3 md:gap-x-4">
@@ -46,7 +50,7 @@ const isOpenMenu = ref(false)
                 </div>
 
                 <button @click="router.push('/booking')"
-                    class="bg-primary text-white py-3 cursor-pointer px-7 font-semibold rounded-md hidden lg:block ">
+                    class="bg-primary text-white py-3 cursor-pointer px-7 font-semibold rounded-md hidden lg:block hover:bg-blue-700">
                     Book Service
                 </button>
             </div>
@@ -62,14 +66,14 @@ const isOpenMenu = ref(false)
                 :class="['lg:hidden bg-primary fixed z-20 top-0 py-10 px-10 sm:px-14 h-screen w-[70%] transition-all duration-[.5s] ease-in-out', isOpenMenu ? 'right-0' : 'right-[-100%]']">
 
                 <button class="bg-primary absolute top-6 -left-18 w-12 h-12 grid place-items-center rounded-full"
-                    @click="isOpenMenu=false">
+                    @click="isOpenMenu = false">
                     <font-awesome-icon icon="fa-solid fa-times" class="text-2xl text-white" />
                 </button>
 
 
                 <ul class="flex flex-col gap-y-7">
                     <li v-for="({ name, path }, index) in navLinks" :key="index">
-                        <RouterLink :to="path" class="text-white font-[500] text-lg" v-slot="{isActive}">
+                        <RouterLink :to="path" class="text-white font-[500] text-lg" v-slot="{ isActive }">
                             <span :class="isActive && 'text-[#acacac]'">
                                 {{ name }}
                             </span>
