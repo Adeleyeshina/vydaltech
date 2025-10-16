@@ -22,21 +22,17 @@ const heroWorks = [
         <div class="absolute inset-0 bg-black/20  w-full h-full "></div>
 
         <!-- Hero Content -->
-        <div class="grid grid-cols-1 2xl:grid-cols-2 z-2 items-center gap-x-20 gap-y-7">
+        <div class="grid grid-cols-1 lg:grid-cols-2 z-2 items-center gap-x-10 gap-y-7">
             <!-- Left -->
             <div class="space-y-5">
-                <p class="text-center grid rounded-full bg-primary sm:w-fit text-white py-2 px-5 font-semibold">
-                    Professional
-                    Security
-                    Solutions</p>
+                <p class="text-sm sm:text-lg text-center grid rounded-full bg-primary sm:w-fit text-white py-2 px-5 font-semibold">
+                    Professional Security Solutions</p>
                 <h1 class="text-center text-4xl sm:text-left sm:text-5xl 2xl:text-7xl font-bold text-white">
                     Secure, Monitor, and <span class="text-[#60a5fa]">Protect</span> with Vyldal Tech
                 </h1>
 
-                <p class="text-xl text-center sm:text-left sm:text-2xl font-normal text-gray-100">Professional approach
-                    to tech simplicity. Safeguarding
-                    your
-                    home, office, and business with
+                <p class="text-xl text-center sm:text-left sm:text-2xl font-normal text-gray-100">
+                    Professional approach to tech simplicity. Safeguarding your home, office, and business with
                     cutting-edge security solutions.
                 </p>
 

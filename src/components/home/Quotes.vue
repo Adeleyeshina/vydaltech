@@ -21,7 +21,7 @@ const handleSubmit = () => {
         <div>
             <h3 class="text-white text-2xl font-bold">Quick Quote</h3>
 
-            <form @submit.prevent="handleSubmit" class="mt-7 space-y-5">
+            <form @submit.prevent="handleSubmit" class="mt-3 space-y-5">
                 <input type="text" placeholder="Your Name" v-model="quotes.name" required
                     class="w-full outline-0 border shadow border-gray-500 text-white py-2.5 px-4 rounded-lg focus:ring-2 focus:ring-primary">
 
