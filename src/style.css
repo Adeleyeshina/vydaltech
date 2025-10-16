@@ -13,7 +13,7 @@ html, body {
 }
 
 section {
-    @apply px-[30px] sm:px-14 py-12 md:py-18
+    @apply px-[25px] sm:px-14 py-12 md:py-18
 }
 .headingStyle {
     @apply text-4xl  sm:text-5xl font-bold 

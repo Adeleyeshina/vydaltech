@@ -13,7 +13,7 @@ watch(() => routes.path, () => {
 </script>
 
 <template>
-    <nav class="bg-white shadow-sm px-[30px] sm:px-14 py-4 sticky top-0 min-w-full z-5">
+    <nav class="bg-white shadow-sm px-[25px] sm:px-14 py-4 sticky top-0 min-w-full z-5">
         <div class="flex justify-between items-center">
             <!-- Logo -->
             <RouterLink to="/" class="flex items-center gap-x-3 md:gap-x-4">

@@ -18,7 +18,7 @@ const heroWorks = [
 </script>
 <template>
     <header
-        class="px-[30px] sm:px-14 bg-[url('/images/home/herobanner.png')] w-full bg-cover bg-center relative flex items-center py-18 sm:py-25">
+        class="px-[25px] sm:px-14 bg-[url('/images/home/herobanner.png')] w-full bg-cover bg-center relative flex items-center py-18 sm:py-25">
         <div class="absolute inset-0 bg-black/20  w-full h-full "></div>
 
         <!-- Hero Content -->
