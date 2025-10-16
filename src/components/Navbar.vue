@@ -13,7 +13,7 @@ watch(() => routes.path, () => {
 </script>
 
 <template>
-    <nav class="bg-white shadow-sm px-[25px] sm:px-14 py-4 sticky top-0 min-w-full z-5">
+    <nav class="bg-white shadow-sm px-[18px] sm:px-14 py-4 sticky top-0 min-w-full z-5">
         <div class="flex justify-between items-center">
             <!-- Logo -->
             <RouterLink to="/" class="flex items-center gap-x-3 md:gap-x-4">
@@ -21,7 +21,7 @@ watch(() => routes.path, () => {
                     <font-awesome-icon icon="fa-shield-halved" class="text-white text-[1.6rem]" />
                 </div>
                 <div>
-                    <h2 class="text-secondary font-bold text-2xl md:text-[1.6rem]">Vyldal Tech</h2>
+                    <h2 class="text-secondary font-bold text-[1.4rem] md:text-[1.6rem]">Vyldal Tech</h2>
                     <p class="font-normal text-sm">CCTV Service</p>
                 </div>
             </RouterLink>

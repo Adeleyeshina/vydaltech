@@ -15,7 +15,7 @@ import Button from '../Button.vue';
                         About Vydal Tech
                     </h3>
 
-                    <h2 class="text-headingText headingStyle mt-3 text-center xl:text-left">
+                    <h2 class="text-headingText headingStyle md:mt-3 text-center xl:text-left">
                         Who We Are
                     </h2>
 
@@ -57,7 +57,7 @@ import Button from '../Button.vue';
 
                 <div class="text-white mt-5">
                     <h3 class="font-bold text-2xl">Our Mission</h3>
-                    <p class="mt-4 text-gray-300 text-base md:text-lg font-normal">
+                    <p class="mt-2 text-gray-300 text-base md:text-lg font-normal">
                         To provide cutting-edge security solutions that give our clients complete peace of mind,
                         ensuring their properties and loved ones are always protected.
                     </p>
